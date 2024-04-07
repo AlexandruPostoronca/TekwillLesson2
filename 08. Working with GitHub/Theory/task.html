@@ -1,0 +1,106 @@
+<h2>Local work</h2>
+<h4>The model of work</h4>
+<p>Imagine that you have a repository hosted on GitHub with a project that you are going to develop. It may be a forked
+    repository or an original one, the point is that you have full access to it.</p>
+<p>The standard approach to work with a project is to have a local copy of the repository and commit your changes to
+    this copy rather than to a remote repo hosted on GitHub through the web interface. This local repository has full
+    version history of the project that can be useful when working without an internet connection. After you've changed
+    something in the local repo, you can push your changes to the remote repository to make them visible to other
+    developers.</p>
+<p>The picture below shows the model of how to work with GitHub.</p>
+<p><img alt="" src="2.5.1.png" width="499px" style="margin: auto;"></p>
+<p>First, consider the block related to GitHub. There are two repositories:</p>
+<ul>
+    <li><strong>upstream</strong> is an original repo of the project that you have forked;</li>
+    <li><strong>origin</strong> is your fork (copy) on GitHub to which you have full access.</li>
+</ul>
+<p>To implement changes from your fork to the original repo of the project, you need to make a<strong> </strong>pull
+    request<strong> </strong>as we did before.</p>
+<p>If you want to make small changes in your repo (fork), you can use the web interface of GitHub. However, this
+    approach is not convenient when developing programs, because you often need to run and debug them locally. The
+    standard way is to create a local clone of a remote repository and work with it locally, pushing changes to the
+    remote repo from time to time.</p>
+
+<h4>Cloning a repo</h4>
+<p>Now you need to clone your fork (origin) of <a href="https://github.com/hyperskill/intro-to-github"
+                                                  rel="nofollow noopener noreferrer" target="_blank"
+                                                  title="Link: https://github.com/hyperskill/intro-to-github">our
+    educational repository</a> on your computer. Find the <em>Clone or download</em><strong> </strong>button within the
+    repo and click it to show the address of the repository for cloning.</p>
+<img alt="" src="2.5.2.png" width="400" style="margin: auto;">
+<p>Open your command line or terminal and enter the directory where you want to copy the repository. Then write <code>git
+    clone</code> and insert the address:</p>
+<code>$ git clone https://github.com/hyperskill/intro-to-github.git</code>
+<p>Now, you have a local repository of the project.</p>
+
+<div class="alert alert-primary"> Note<strong> </strong>that you can switch to the SSH protocol instead of HTTPS (SSL)
+    to clone a repo. We will not consider it here, but you may learn how to do this and do it if you're interested (e.g.
+    developers often prefer SSH in practice).
+</div><p></p>
+
+<h4>Creating branch locally</h4>
+<p>Navigate to the directory of the repository and take a look at the content. The local repo includes all the files,
+    branches, and commits history like the remote repository. Type this command to verify the state of your repo:</p>
+<pre><code>$ git status
+
+On branch master
+Your branch is up-to-date with 'origin/master'.</code></pre>
+<p>Now your working copy is actually on the <em>master</em> branch of your local repo. And it is similar to the origin
+    (fork) <em>master</em> branch. To make changes in your repo, first, you should create a branch to protect your <em>master</em><strong> </strong>branch.
+    Type the command below:</p>
+<pre><code>$ git branch edit-readme</code></pre>
+<p>After this command is executed, a new branch <em>edit-readme</em> is created, but you are still on the
+    <em>master</em> branch. You may check it using status just like in the previous example.</p>
+<p>To get another branch, use <code>checkout</code> with the branch name:</p>
+<pre><code>$ git checkout edit-readme</code></pre>
+<p>Now you are on the branch that you've created.</p>
+<pre><code>$ git status
+
+On branch edit-readme
+nothing to commit, working tree clean</code></pre>
+<p>We are ready to make some changes on a new branch.</p>
+
+<h4>Modifying content</h4>
+<p>The basic workflow looks like this:</p>
+<ol>
+    <li>
+        <p>Modify the files in your working copy.</p>
+    </li>
+    <li>
+        <p>Select and stage changes you want to be a part of your next commit.</p>
+    </li>
+    <li>
+        <p>Perform a commit that includes your changes.</p>
+    </li>
+</ol>
+<p>Let's make some changes then! Open the <em>README.md</em> file and write a few lines in it. Then check the status of
+    the repo again and you will see that the file has been changed. Now, stage these changes using <code>add</code>:</p>
+<pre><code>$ git add README.md</code></pre>
+<p>You can commit these changes to your local repo with a descriptive comment:</p>
+<pre><code>$ git commit -m "Add information about local repository in readme file"</code></pre>
+<p>You can make as many commits as you need. Changes can be different: adding new files, deleting, or modifying existing
+    ones. Do not forget to stage them using <code>add</code> before <code>commit</code>.</p>
+
+<h4>Pull and push</h4>
+<p>It is important to remember that <code>commit</code> adds changes only to your local repository. If you want to
+    propagate them to the origin repository on GitHub, you need to use <code>push</code>.</p>
+<p>For the first time, you need to push your local branch as well because it does not exist in the remote repo.</p>
+<pre><code>$ git push --set-upstream origin edit-readme</code></pre>
+<p>The next time it will be easier:</p>
+<pre><code>$ git push</code></pre>
+<p>To get changes made by someone else, use <code>pull</code>:</p>
+<pre><code>$ git pull</code></pre>
+<p>A nice thing to do is to execute pull periodically, especially before pushing, to prevent possible conflicts when
+    someone else has changed the files in the repository in the same branch. </p>
+<p>After pushing your branch with changes, you may find it on GitHub and create a <em>Pull Request</em> to the original
+    (upstream) repo as we did it before.</p>
+<p>There is another problem that we have not considered yet: someone may change the original repository while you are
+    working in your fork and you need to synchronize your local and remote repositories with these changes. We will take
+    a closer look at this problem in other topics.</p>
+
+<h4>Conclusion</h4>
+<p>For now, you need to remember what a local repository is and how to change files locally, and then propagate the
+    changes to a remote repository hosted on GitHub. Although working with the command line with Git might seem
+    difficult for beginners, don't worry. We will learn later how to perform the same commands in an easier way using a
+    convenient user interface.</p>
+

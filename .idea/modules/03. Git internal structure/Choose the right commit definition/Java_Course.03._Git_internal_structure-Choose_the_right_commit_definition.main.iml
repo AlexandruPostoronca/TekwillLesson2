@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":03._Git_internal_structure-Choose_the_right_commit_definition:main" external.linked.project.path="$MODULE_DIR$/../../../../03. Git internal structure/Choose the right commit definition" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="Java_Course" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../03. Git internal structure/Choose the right commit definition/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../03. Git internal structure/Choose the right commit definition/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../03. Git internal structure/Choose the right commit definition/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Java_Course.util.main" />
+  </component>
+</module>

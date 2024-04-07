@@ -1,0 +1,33 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Create a pull request to propose changes in the original repo.
+    is_correct: true
+  - text: Change a file in fork (e.g. README.md).
+    is_correct: true
+  - text: Add new files in fork.
+    is_correct: true
+  - text: Create an issue in fork.
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 19:04:57 UTC"
+record: -1
+selected_options:
+  - 0
+  - 1
+  - 2
+  - 3
+custom_name: Operations
+local_check: true

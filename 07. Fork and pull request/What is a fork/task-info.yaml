@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: a copy of a repository
+    is_correct: true
+  - text: a help file
+    is_correct: false
+  - text: a link to a repository
+    is_correct: false
+  - text: a copy of a program
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 19:04:07 UTC"
+record: -1
+selected_options:
+  - 0
+custom_name: What is a fork?
+local_check: true

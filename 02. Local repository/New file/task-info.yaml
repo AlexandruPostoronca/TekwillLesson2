@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: git add -A Main.java
+    is_correct: false
+  - text: git push Main.java
+    is_correct: false
+  - text: git add Main.java
+    is_correct: true
+  - text: git upload Main.java
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:07:26 UTC"
+record: -1
+selected_options:
+  - 2
+custom_name: New file
+local_check: true

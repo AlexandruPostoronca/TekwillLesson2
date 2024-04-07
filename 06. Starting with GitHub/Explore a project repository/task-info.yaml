@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: in Wiki tab
+    is_correct: true
+  - text: in .gitignore file
+    is_correct: false
+  - text: in Issues tab
+    is_correct: false
+  - text: in README.md file
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 19:01:50 UTC"
+record: -1
+selected_options:
+  - 0
+  - 3
+custom_name: Explore a project repository
+local_check: true

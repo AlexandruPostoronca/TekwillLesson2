@@ -1,0 +1,34 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: individual
+    is_correct: false
+  - text: removed
+    is_correct: false
+  - text: local
+    is_correct: true
+  - text: private
+    is_correct: false
+  - text: remote
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 17:53:49 UTC"
+record: -1
+selected_options:
+  - 2
+  - 4
+custom_name: Git repositories
+local_check: true

@@ -1,0 +1,105 @@
+<h2>Starting with Git</h2>
+<p>In this topic, we will start exploring Git, the essential tool to control and merge your code versions. We will learn
+    what Git is, why we need to use it, and how to install it on the three major operating systems.</p>
+
+<h4>What is Git?</h4>
+<p><strong>Git</strong> is a distributed version control system that helps developers track and record changes in the
+    files. These can be any files one wants to work with, but we will take a closer look at the source codes of
+    programs. With Git, you can roll back to an older version of your project, compare it, analyze, and merge changes.
+    This process is called <em>version control</em>.
+</p>
+<p>Git is<em> distributed</em>, that is, it doesn't depend on a single central server that stores files. Instead, it
+    works entirely locally, storing data in folders on your hard drive called a <strong>repository</strong>. This is
+    called the <em>local</em> repository existing only on your hard drive. However, you can keep a copy of it online,
+    which makes it a lot easier for multiple people to work on the same project. In that case, it is called a
+    <em>remote</em> repository.
+</p>
+
+
+<p>A number of services provide hosting for Git repositories, among the most famous are
+    <a href="https://github.com/" rel="noopener noreferrer nofollow" target="_blank">GitHub</a>,
+    <a href="https://bitbucket.org/" rel="noopener noreferrer nofollow" target="_blank">Bitbucket</a> and
+    <a href="https://gitlab.com/gitlab-com" rel="noopener noreferrer nofollow" target="_blank">GitLab</a>. Further, we
+    will discuss only GitHub as the most popular among these resources. Anyway, if you want, you may use the others
+    listed above instead.</p>
+
+<p>
+    Git is a free and open-source software primarily developed for Linux, but it also supports most major operating
+    systems, including macOS and Windows. Now we will learn how to install Git on these systems.
+</p>
+
+<img alt="git_logo" src="2.1.1.png" width="300" style="margin: auto;">
+
+<h4>Installing Git</h4>
+
+<p><strong>1. Windows</strong></p>
+<p>There are several ways to install Git on Windows. First, you can go to the
+    <a href="https://git-scm.com/download/win" rel="noopener noreferrer nofollow" target="_blank">official Git site</a>,
+    and the download will start automatically. After installation, you need to select the options you need in the
+    settings.</p>
+<p>For unattended installation, you can also use the
+    <a href="https://chocolatey.org/packages/git" rel="noopener noreferrer nofollow" target="_blank">Git Chocolatey
+        package</a>.</p>
+<p>Another easy way to install Git is to install GitHub for Windows. Its installer includes command-line utilities and
+    GUI Git. You can download GitHub for Windows from the
+    <a href="https://desktop.github.com/" rel="noopener noreferrer nofollow" target="_blank">GitHub Desktop website</a>.
+</p>
+
+<p><strong>2. Linux</strong></p>
+<p>You can just open a terminal and install the application using your distribution's package manager. If you have
+    Fedora (or another similar distribution such as RHEL or CentOS), you can use <code>dnf</code>:
+</p>
+<pre><code>$ sudo dnf install git-all</code></pre>
+<p>If you have a Debian-based distribution like Ubuntu, try <code>apt</code>:</p>
+<pre><code>$ sudo apt install git</code></pre>
+
+<p><strong>3. macOS</strong></p>
+<p>There are several ways to install Git on Mac.</p>
+<p>You may install the <code>Xcode Command Line Tools</code> by typing the following command in your terminal:</p>
+<pre><code>xcode-select --install</code></pre>
+<p>Then you can simply check if Git is already installed:</p>
+<pre><code>$ git --version</code></pre>
+<p>If Git is not installed, you will be prompted to install it.</p>
+<p>The other way is to use <code>homebrew</code>, which can be installed from the terminal using the command below:</p>
+<pre><code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"</code></pre>
+<p>More information on <code>homebrew</code> can be found on the
+    <a href="https://brew.sh/" rel="noopener noreferrer nofollow" target="_blank">homebrew official website</a>. After
+    installing it, run in the terminal:
+</p>
+<pre><code>brew install git</code></pre>
+<p>You can also install Git when installing GitHub for Mac. Their GUI Git tool has an option to install command line
+    tools as well. You can download the
+    <a href="https://desktop.github.com" rel="noopener noreferrer nofollow" target="_blank">GitHub client for Mac</a>.
+</p>
+
+<h4>Git settings</h4>
+<p>So, we have successfully installed Git, now we need to adjust some settings. There are quite a few options to play
+    with, but we'll set up the most important ones: our username and email address. Open the terminal and run the
+    commands:
+</p>
+<pre><code>git config --global user.name "My Name"
+git config --global user.email myEmail@example.com</code>
+</pre>
+<p>Now each of our actions will be marked with our name and e-mail address. Thus, users will always know who is
+    responsible for certain changes: this brings order!</p>
+
+<h4>Git check</h4>
+<p>Usually, the installation is successful, but just in case, we recommend you to check that the latest version of Git
+    has actually been installed by running the <code>git --version</code> command in the terminal. The result will be
+    something like the following:</p>
+<pre><code>git version 2.33.1</code></pre>
+<div class="alert alert-primary">
+    Versions are updated, so you may have a different one. In our example, this is the <em>2.33.1</em> version.
+</div>
+<p>It means that Git is installed, and you can start working with it.</p>
+
+<h4>Conclusion</h4>
+<p>Let's sum up what you've learned on this topic:</p>
+<ul>
+    <li>Git is a set of console utilities to store, control, change and merge your codes.</li>
+    <li>You can easily install it on Windows, Linux, or macOS.</li>
+    <li>With Git, you can keep your projects either locally on your hard drive or using an online service.</li>
+</ul>
+<p>Now, since you are familiar with Git, you might be interested to discover more about it in the next topics. But
+    first, let's get to some tasks!
+</p>

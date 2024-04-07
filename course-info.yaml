@@ -1,0 +1,28 @@
+title: 02. Version Control System
+language: English
+summary: |-
+  This is an introductory course about Version Control System:
+  - 01. Starting with Git
+  - 02. Local repository
+  - 03. Starting with GitHub
+  - 04. Working with remote repository
+  - 05. Git branches
+  - 06. Fork and pull request
+  - 07. Working with GitHub
+  - 08. Git internal structure
+programming_language: Java
+programming_language_version: 17
+content:
+  - 01. Starting with Git
+  - 02. Local repository
+  - 03. Git internal structure
+  - 04. Git branches
+  - 05. Working with remote repository
+  - 06. Starting with GitHub
+  - 07. Fork and pull request
+  - 08. Working with GitHub
+mode: Study
+environment_settings:
+  jvm_language_level: JDK_17
+vendor:
+  name: Alexandru Umaneț

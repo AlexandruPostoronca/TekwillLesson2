@@ -1,0 +1,68 @@
+<h2>Working with remote repository</h2>
+<h4>Introduction</h4>
+<p>
+    <span>Imagine you and your dream team are developing a large and complex project. You decided to divide it into
+        parts so that everyone could concentrate on doing one of them. And in the end, you plan to join forces.
+        What is the best way to do it? The simplest approach is to set up a remote repository to which everyone will
+        upload their versions. This way, you won't be confused by the new code versions and will not lose important features.
+    </span>
+</p>
+<p>
+    <span>In other words, when someone completes one part of the project, the new data is uploaded to the remote
+    repository. After you've updated the data, the other team member may download it and continue working on it.
+    </span>
+</p>
+<p>
+    There are useful commands,<strong>git clone</strong>, <strong>git push</strong>, and <strong>git pull</strong>,
+    <span>to upload and download data from there. Let's take a look at how they all work.</span>
+</p>
+<h4>Git clone</h4>
+<p>You can start working after you've created a remote repository, for example, on GitHub. For
+    this, you should clone the repository to your computer. You can do it with the <code>git clone</code>
+    command:
+</p>
+<pre><code>$ git clone https://github.com/dream_team/project.git</code></pre>
+<p>
+    The syntax is as follows: first, we type the command <code>git clone</code> and then add the address of
+    the remote repository on the server, in this case, this is the <code>dream_team</code> repository on
+    GitHub, where there is a new <code>project.git</code>. This way, you will get the whole repository with
+    all its content. But for the very first time, it naturally will be empty.</p><p>Cool, now you have a working area,
+    and you can get down to coding! And then, there will be time to get the new data to the server. For this, you will
+    need the <code>git push</code> command.</p><h4>Git push</h4><p>Git push is sending data, meaning
+    commits and branches, to the server, to a remote repository. That is, every time you make some changes to the code
+    and commit them, you can and should upload the updated data to the server. This way your colleagues will always see
+    the current version of the code. And It is also essential to have such a backup in case of data loss on your
+    computer.</p><p>The command syntax is as follows:<code>git push origin &lt;branch_name&gt;</code>. This
+    means you push the data to the remote server (origin) and push it to a concrete branch. In the example below, this
+    is the <code>main</code> branch:</p>
+<pre><code>$ git push origin main</code></pre>
+<p>If you want,
+    you can push on another branch. If there is no such branch on the server, then it will be created. If you have
+    already pushed it before, then new commits will simply be sent there, and in this case, you can use short versions
+    of the command: just <code>git push</code>.<br>
+    And please do not forget, that before you push the changes, you should commit them first.</p><p>Okay, now you've
+    pushed your changes to the server. But what about the opposite situation when you need to download them from the
+    server? You've probably guessed it: you may clone the repository one more time by <code>git
+        clone</code>, but it will copy all the changes ever committed. What if you are interested only in the latest
+    changes that are more actual? Then you should use the <code>git pull</code> command.</p><h4>Git
+    pull</h4><p>Git pull is downloading data from the server and only the most recent one. This way, you won't get
+    confused about the commits and will be sure you only copied the freshest and most current of them. So, you just do:
+    <code>git pull origin &lt;branch_name&gt;</code>, i.e., you download the latest changes from the remote
+    repository branch on the server. In the example, we download data from the <code>main</code> branch.
+</p>
+<pre><code>$ git pull origin main</code></pre>
+<p>You can choose
+    all the branches you need and use a short version of the command. Just write a <code>git pull</code> if
+    the local branch already belongs to some remote branch from which you are downloading the changes.</p><p>Awesome,
+    now with all the latest changes, you can start making your own and push them again. And so on in a circle, until the
+    project is finished. However, in a large project with a lot of constant changes, there may arise some problems.
+    Let's discuss one of the most frequent ones below to understand why it happens and how it can be solved.</p><h4>Git
+    push rejected</h4><p>This problem arises sooner or later if you and your team are working with git on a regular
+    basis. And it goes like this: you make a new commit, try to push it, and git throws you a <code>git
+        push rejected error</code> in response. This happens to you if someone has made changes you didn't pull yet. Git
+    is designed so that we can commit as many times as we want but only locally. Before you send your commits to the
+    server, you need to pull new commits from it. The ones that your colleagues did. That is, do a <code>git
+        pull</code>, and the problem is solved!</p><h4>Conclusion</h4><p>Now you know how to clone a remote repository
+    from the server using the <code>git clone</code> command, how to upload changes to the server using the
+    <code>git push</code> command, and how to download the most recent updates using the <code
+    >git pull</code> command.</p>

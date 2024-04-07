@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="zulu-21" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/Choose the right answer" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/Choose the right definition" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/Git repositories" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/Git settings" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/Tell git your name" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/Theory" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/What is Git" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/What is Git 2" />
+            <option value="$PROJECT_DIR$/01. Starting with Git/What is wrong here" />
+            <option value="$PROJECT_DIR$/02. Local repository/Choose the right definition" />
+            <option value="$PROJECT_DIR$/02. Local repository/Commit message" />
+            <option value="$PROJECT_DIR$/02. Local repository/Commit representation" />
+            <option value="$PROJECT_DIR$/02. Local repository/Fix the changes" />
+            <option value="$PROJECT_DIR$/02. Local repository/Initializing a repository" />
+            <option value="$PROJECT_DIR$/02. Local repository/New file" />
+            <option value="$PROJECT_DIR$/02. Local repository/Remote server" />
+            <option value="$PROJECT_DIR$/02. Local repository/Theory" />
+            <option value="$PROJECT_DIR$/03. Git internal structure/Choose the right commit definition" />
+            <option value="$PROJECT_DIR$/03. Git internal structure/Config file content" />
+            <option value="$PROJECT_DIR$/03. Git internal structure/Git folder content" />
+            <option value="$PROJECT_DIR$/03. Git internal structure/Theory" />
+            <option value="$PROJECT_DIR$/03. Git internal structure/Where are the changes stored" />
+            <option value="$PROJECT_DIR$/04. Git branches/Choose the right command" />
+            <option value="$PROJECT_DIR$/04. Git branches/Theory" />
+            <option value="$PROJECT_DIR$/04. Git branches/What does the command do" />
+            <option value="$PROJECT_DIR$/04. Git branches/What is branch" />
+            <option value="$PROJECT_DIR$/05. Working with remote repository/Data for everyone" />
+            <option value="$PROJECT_DIR$/05. Working with remote repository/Get the repository" />
+            <option value="$PROJECT_DIR$/05. Working with remote repository/Git push error" />
+            <option value="$PROJECT_DIR$/05. Working with remote repository/Remote work" />
+            <option value="$PROJECT_DIR$/05. Working with remote repository/Share your changes" />
+            <option value="$PROJECT_DIR$/05. Working with remote repository/Theory" />
+            <option value="$PROJECT_DIR$/06. Starting with GitHub/Explore a project repository" />
+            <option value="$PROJECT_DIR$/06. Starting with GitHub/Operations with a project" />
+            <option value="$PROJECT_DIR$/06. Starting with GitHub/Rename" />
+            <option value="$PROJECT_DIR$/06. Starting with GitHub/Theory" />
+            <option value="$PROJECT_DIR$/06. Starting with GitHub/What is a repository" />
+            <option value="$PROJECT_DIR$/07. Fork and pull request/Important concept" />
+            <option value="$PROJECT_DIR$/07. Fork and pull request/Make a change" />
+            <option value="$PROJECT_DIR$/07. Fork and pull request/Offer the change" />
+            <option value="$PROJECT_DIR$/07. Fork and pull request/Operations" />
+            <option value="$PROJECT_DIR$/07. Fork and pull request/Theory" />
+            <option value="$PROJECT_DIR$/07. Fork and pull request/What is a fork" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Check the repo state" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Cloning the repo" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Copy of the repo" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Explain the result" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Original repo" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Propagating changes" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Stage the change" />
+            <option value="$PROJECT_DIR$/08. Working with GitHub/Theory" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

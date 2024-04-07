@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: config
+    is_correct: false
+  - text: project documentation
+    is_correct: true
+  - text: hooks
+    is_correct: false
+  - text: description
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:27:22 UTC"
+record: -1
+selected_options:
+  - 1
+custom_name: Git folder content
+local_check: true

@@ -1,0 +1,30 @@
+type: theory
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+  - name: 2.3.1.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: 2.3.2.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: 2.3.3.png
+    visible: false
+    is_binary: true
+    learner_created: false
+  - name: 2.3.4.png
+    visible: false
+    is_binary: true
+    learner_created: false
+status: Solved
+record: -1
+post_submission_on_open: true

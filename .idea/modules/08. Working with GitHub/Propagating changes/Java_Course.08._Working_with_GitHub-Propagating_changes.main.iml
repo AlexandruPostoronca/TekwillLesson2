@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":08._Working_with_GitHub-Propagating_changes:main" external.linked.project.path="$MODULE_DIR$/../../../../08. Working with GitHub/Propagating changes" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="Java_Course" external.system.module.type="sourceSet" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output url="file://$MODULE_DIR$/../../../../08. Working with GitHub/Propagating changes/out/production/classes" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../08. Working with GitHub/Propagating changes/src">
+      <sourceFolder url="file://$MODULE_DIR$/../../../../08. Working with GitHub/Propagating changes/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="Java_Course.util.main" />
+  </component>
+</module>

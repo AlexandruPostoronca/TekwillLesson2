@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: git solve my error
+    is_correct: false
+  - text: git commit
+    is_correct: false
+  - text: git help
+    is_correct: false
+  - text: git pull
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:49:43 UTC"
+record: -1
+selected_options:
+  - 3
+custom_name: Git push error
+local_check: true

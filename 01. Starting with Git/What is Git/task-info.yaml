@@ -1,0 +1,33 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: add files to GitHub
+    is_correct: true
+  - text: record changes in files
+    is_correct: true
+  - text: track changes in your code
+    is_correct: true
+  - text: update your operating system
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 17:51:53 UTC"
+record: -1
+selected_options:
+  - 0
+  - 1
+  - 2
+custom_name: What is Git?
+local_check: true

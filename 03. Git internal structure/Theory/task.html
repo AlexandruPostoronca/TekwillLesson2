@@ -1,0 +1,88 @@
+<h2>Git internal structure</h2>
+<p>As you may remember, Git is a version control system. But what is behind this definition? How does the system work,
+    and why is it so convenient to use it?</p>
+<p>In practical topics, we will show specific examples of how you can version control your projects. But first, let's
+    talk about the basic concepts in general for a better understanding of the processes<strong>. </strong>The main task
+    when working with git is project versioning. To do this, you need:
+</p>
+<ul>
+    <li>
+        work tools that are contained in a git folder that is created immediately after a new repository are declared;
+    </li>
+    <li>
+        tracking the state of files in order to understand at what stage of work the project is now and where it will go
+        later;
+    </li>
+    <li>committing the changes made to the project files when the work is finished.</li>
+</ul>
+<p>Thus, three main notions that describe the logic of Git work are <strong>.git folder</strong>, <strong>git
+    commit</strong>, and <strong>git files stages</strong>. Now let's look at these concepts in order, and start with a
+    git folder.
+</p>
+
+<h4>.git folder</h4>
+<p>After creating a new repository, you'll have a .git folder. The folder
+    contains everything you need to work with Git. You can also delete it if you don't need a Git in your project. The
+    project files will remain on disk.</p>
+<p>Here are the contents of a typical .git folder before your first commit:</p>
+<ul>
+    <li><em>HEAD</em> is a file containing a pointer either to the current (for the repository) branch or to the current
+        commit;
+    </li>
+    <li><em>config </em>– this file contains settings for your repository, here, for example, the URL of your repository
+        is stored in the repository, your name, email, which you can configure using the git config command after
+        creating the repository. Every time you do git config, you will refer to this file;
+    </li>
+    <li><em>description</em> is used by the Gitweb interface to display a description of the repository;</li>
+    <li><em>hooks </em>– this folder contains scripts that can be executed at various stages of Git execution. An
+        example of a hook would be the style check script before pushing to the repository;
+    </li>
+    <li><em>info-exclude</em> – files that you do not want to include in the repository are described here.</li>
+</ul>
+
+<h4>Git file stages</h4>
+
+<p>Here are three main states that your files can be in:</p>
+<p>
+    So, respectively, there are three main concepts about the architecture of Git: the three main sections of a Git
+    project.
+</p>
+<img alt="" src="2.5.1.png" width="600" style="margin: auto">
+<p>The <strong>Git directory</strong> (.git) is where Git stores the metadata and object base of your project. This is
+    the most important part of Git, which gets copied when you clone a repository from another machine.</p>
+<p>
+    The <strong>working directory</strong> is a snapshot of the project version. The files are unpacked from a
+    compressed database into a Git directory and placed on disk so that you can use and modify them.<br>
+</p>
+<p>
+    The <strong>staging area</strong> is a file located in your Git directory that contains information about what
+    changes will go to the next commit. This area is also called the "<em>index</em>", but it is also common to call it
+    the <em>stage area</em>. When you add a file, it first goes exactly to the index, and only after the commit it
+    appears in the repository.
+</p>
+<p>Summing it all up, the basic Git approach looks like this:</p>
+<ol>
+    <li>You change files in your working directory.</li>
+    <li>You add files to the index, thereby adding their snapshots to the staging area.</li>
+    <li>When you commit, the files from the index are used as-is and this snapshot is saved to your Git directory
+        (.git).
+    </li>
+</ol>
+<h4>Git Commit</h4>
+<p>The entire structure of Git is
+    largely based on the need to save the current version of the project. Imagine what it would be like if we didn't
+    have this at all and how inconvenient it would be to work with files. If the file was changed, but there was a need
+    to return to the previous version due to, say, incorrect changes, it would be impossible to restore the status quo
+    and correct the error.</p><p>That's why one of the most important concepts in Git is<strong> commit</strong>, which
+    means saving the state of your project. Every time you make a commit, the system remembers how each file looks at
+    that moment and saves a link to this snapshot. To increase efficiency, if there weren't any changes, Git does not
+    remember these files again but only creates a link to the previous version of the identical file that is already
+    saved.</p><p>All changes are stored in a local database, which is created immediately after installing Git on your
+    computer. This means that you will see the history of the project almost instantly. If you need to look at changes
+    made between the current version of a file and a version created a month ago, Git can find the file a month old and
+    compute the changes locally.</p><p>When searching for Git, it refers to a previously saved string. This means that
+    you can't just take and change the contents of a file without Git knowing about it. This functionality is built into
+    Git at a low level. This way, you won't lose information during the transfer or get a damaged file without Git's
+    knowledge.</p><h4>Conclusion</h4><p>The main thing that Git does is archiving your working folder and putting it in
+    the object's folder with some additional information. If you are familiar with Git, then you have complete control
+    over which files are included in the commit and which are not.</p>

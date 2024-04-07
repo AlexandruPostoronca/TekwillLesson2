@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: to share the code so it can be seen by other developers
+    is_correct: true
+  - text: "you don't need it at all, you can use a browser instead"
+    is_correct: false
+  - text: to deliver the code to the server where it will run
+    is_correct: true
+  - text: to conduct development without Internet access
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:14:32 UTC"
+record: -1
+selected_options:
+  - 0
+  - 2
+custom_name: Remote server
+local_check: true

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":01._Starting_with_Git-Choose_the_right_answer" external.linked.project.path="$MODULE_DIR$/../../../../01. Starting with Git/Choose the right answer" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="Java_Course" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../01. Starting with Git/Choose the right answer">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../01. Starting with Git/Choose the right answer/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../01. Starting with Git/Choose the right answer/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../01. Starting with Git/Choose the right answer/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

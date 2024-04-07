@@ -1,0 +1,69 @@
+<h2>Local repository</h2>
+<p>After we figured out what Git is, what it is for, and how to install it, we can create our first Git repository, i.e.
+    the file system directory that contains files. As you see, the repository is the space in which we work with Git, so
+    first of all we should create it.
+</p>
+<p>Remember the two kinds of repositories: local and remote? Since at first everything is done locally and only then it
+    is transferred to remote access, we should create a local repository first. In this topic, you will find out how to
+    do it and how to add files, check the repository status, and write your first commit.
+</p>
+<h4>Git init</h4>
+<p>As you may remember, Git stores its files and history right in the project folder. To create a new repository, we
+    need to open a terminal, go to our project folder, and run the <code>git init</code> command:
+</p>
+<pre><code>$ git init</code></pre>
+<p>This will include the application in that particular folder and create a hidden <code>.git</code> directory where
+    the repository history and settings will be stored. As a result, you will see:</p>
+<pre><code>Initialized empty Git repository in /path to the folder with the repository / repository_name/.git/</code></pre>
+<p>This means that your repository has been successfully created, but it is still empty. So, why not add some files?</p>
+
+<h4>Git add</h4>
+<p>Now you can create a file or use a program you have already written and save it in the git directory. There can be as
+    many files as you want with different extensions. Here we have two options: you can either add files one by one
+    using <code>git add</code> command or add all files by <code>git add -A</code>:</p>
+
+<pre><code># adding one concrete file
+
+$ git add my_file.txt
+
+# adding all files from your directory
+
+$ git add -A</code></pre>
+<p>Great, now we have the files, but that's not all.</p>
+<h4>Check repository status</h4>
+<p>To make sure we are doing everything right and also check the changes, you can track the status of the repository
+    using the <code>git status</code> command. For example, now we will check what is happening with our newly created
+    repository. Running <code>git status</code> should give:
+</p>
+<pre><code>$ git status
+On branch master
+Initial commit
+Changes to be committed:
+(use "git rm --cached ..." to unstage)
+new file: my_file.txt</code></pre>
+<p>The command output shows that we have a new repository that contains a file. Note that you can use this command at
+    any stage of your work with the repository, so you can always check if everything is correct. In the output, there
+    are still concepts that may be incomprehensible, like <em>On branch master</em>. We will explain them on the
+    following topics. Now, let's get to the final step of this topic, which is to <strong>commit</strong> the changes to
+    the repository, i.e. adding files there. To do this, we will use the <code>git commit</code> command.</p>
+
+<h4>Git commit</h4>
+<p>A <strong>commit</strong> represents the state of the repository at a specific point in time. This way, each commit
+    fixes the changes and makes it easier to track them later. To commit the changes, we need at least one staging
+    change, for example, adding new files, as we did before. After that, we type in:</p>
+<pre><code>$ git commit -m "First commit."</code></pre>
+<p>This command will create a new commit with all the staging changes. The <code>-m</code> stands for "message" and the
+    <code>"First commit."</code> is this message or, in other words, the comment you add to the commit. It is considered
+    good practice to commit frequently and always write meaningful comments for this makes it easier for you and others
+    to understand and to remember what you did.</p>
+<h4>Conclusion</h4>
+<p>Let's sum up what you've learned in this topic:</p>
+<ul>
+    <li>to create a new repository, use <code>git init </code>command</li>
+    <li>to add files to your repository, use <code>git add &lt;filename.extension&gt; </code>or
+        <code>git add -A</code> to add all files from your directory
+    </li>
+    <li>to commit your changes, use <code>git commit </code>and do not forget to write comments!
+    </li>
+    <li>to check the repository status at any time, use <code>git status</code> command</li>
+</ul>

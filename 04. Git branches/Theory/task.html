@@ -1,0 +1,77 @@
+<h2>Git branches</h2><p>Now it's time to find out how the copies of the projects we store with git are organized. In
+    this topic we will familiarize ourselves with branching, why is it needed, and what we can do with it.</p><h4>
+    Branching</h4><p>Sometimes it is useful to develop modules separately or to create an alternative project version to
+    see if it's better than the previous one. In such cases, it is good practice to work with a copy of the original
+    project, which is called a <strong>branch</strong>. Branches have their own history and changes isolated from each
+    other until you decide to merge them. There are several reasons to have it this way:</p>
+<ul>
+    <li>the already working, stable version of the code is saved,</li>
+    <li>various new functions can be developed in parallel by different programmers,</li>
+    <li>developers can work with their own branches without the risk that the codebase will change due to someone else's
+        changes,
+    </li>
+    <li>in case of doubt, you can develop different implementations of the same idea in different branches and then
+        compare them.
+    </li>
+</ul><p>In other words, branching is the ability to split versions of one project and work with them separately.</p><p>
+    How do you create a branch? The main branch in each repository is called a <strong>master </strong>branch. To create
+    another branch, use the <code>branch &lt;name&gt;</code> command:</p>
+<pre><code>$ git branch new_branch</code></pre><p>This will create a new branch,
+    which is, for now, an exact copy of the master branch. You can change it later and get a new version of the code
+    without affecting the main one. So, in case of errors and failures, just switch to the master and continue working
+    in it, or, alternatively, create another branch because their number is not limited.</p><h4>Switching between
+    branches</h4><p>If we run <code>git branch</code>, there will be two options:</p>
+<pre><code>$ git branch
+new_branch
+* master</code></pre><p>Master is the active branch and is therefore marked with an asterisk. But since we want to work
+    with our new branch, we need to switch to it. For this, we use the <code>git checkout</code> command,
+    which takes only one parameter: the name of our new branch.</p>
+<pre><code>$ git checkout new_branch</code></pre><h4>Merging branches</h4><p>So,
+    you've switched to a new branch, now you can start working with it. For example, you can add and commit a new
+    documentation file for a new version of the project code.</p>
+<pre><code>$ git add new_documentation.txt
+$ git commit -m "New documentation version complete!”</code></pre><p> Since the changes are completed, we can switch
+    back to the master branch:</p>
+<pre><code>$ git checkout master</code></pre><p>Now, if we open our project in
+    the file manager, we will not see the <code>new_documentation.txt</code> file, because we switched back
+    to the master branch where such a file does not exist. In case you need to put the files from a new version to the
+    main one, use the <code>git merge</code> command. <strong>Merging</strong> just means applying changes
+    from the new branch to the main version of the project.</p>
+<pre><code>$ git merge new_branch</code></pre><p>If it no longer makes sense to
+    store new changes separately, and they have already become part of the master, the branch can be deleted using the
+    <code>git branch -d</code> command, where <code>-d</code> means <em>delete</em>:</p>
+<pre><code>$ git branch -d new_branch</code></pre><h4>Resolving merge
+    conflicts</h4><p>Conflicts can occur when merging branches. The most common situation is when one file has been
+    committed twice. Let's look at a version conflict in more detail. For example, the main branch had an <code
+    >initial.file</code> with the formula<code> e = mc^4</code>. In addition, there
+    were two other branches. In the first one, there was a file with the right version of the formula <code
+    >e = mc^2</code>, and in the second one, there was a file with the wrong version of the formula
+    <code>e = mc^3</code>.</p><p>The programmer tried to merge all of these branches together using the
+    merge commands:</p>
+<pre><code>git merge origin/fix-formula-wrong
+git merge origin/fix-formula-right</code></pre><p>As a result, they received the following error:</p>
+<pre><code>Auto-merging initial.file
+CONFLICT (content): Merge conflict in initial.file
+Automatic merge failed; fix conflicts and then commit the result</code></pre><p>And in the file on the main branch,
+    there was already such a formula <code>e = mc^3</code>. If they cancel all their changes, they will get
+    the formula <code>e = mc^4</code> again, which is not correct. As a result, their output is to correct
+    the formula with their hands and commit the already correct result, namely the formula <code>e =
+        mc^2</code>.</p><p>As you can see, the process is quite tedious and can be very difficult on large projects.
+    Many developers prefer to use <a href="https://medium.com/@amitj975/resolve-merge-conflicts-smartly-f3ba2af266be"
+                                     rel="noopener noreferrer nofollow" target="_blank">GUI clients to resolve
+        conflicts</a>, but it isn't necessary for simple ones like the one we discussed here.</p><p>Anyway, before doing
+    anything, it is better to discuss it with your colleagues.</p><h4>Conclusion</h4><p>Let's sum up what you've learned
+    in this topic:</p>
+<ul>
+    <li>a copy of the original project is called a branch; to create a branch, use <code>git branch &lt;branch
+        name&gt;</code> command;
+    </li>
+    <li>to switch between branches, use <code>git checkout</code> command;</li>
+    <li>merging branches means applying changes from one branch to another; to merge, use <code>git
+        merge</code> command;
+    </li>
+    <li>use <code>git branch -d</code> to delete a branch;</li>
+    <li>when merging branches, conflicts may occur; be attentive and keep track of all your actions and the actions of
+        your colleagues if it is a group project.
+    </li>
+</ul>

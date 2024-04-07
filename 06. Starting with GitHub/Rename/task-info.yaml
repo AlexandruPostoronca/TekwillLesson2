@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: primary
+    is_correct: false
+  - text: master
+    is_correct: false
+  - text: main
+    is_correct: true
+  - text: major
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:57:45 UTC"
+record: -1
+selected_options:
+  - 2
+custom_name: Rename
+local_check: true

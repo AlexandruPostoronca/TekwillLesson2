@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: the state of the project at a specific point in time
+    is_correct: false
+  - text: the state of the repository at a specific point in time
+    is_correct: true
+  - text: the attitude a programmer has about their project
+    is_correct: false
+  - text: the number of changes in a project
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 17:59:20 UTC"
+record: -1
+selected_options:
+  - 1
+custom_name: Commit representation
+local_check: true

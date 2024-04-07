@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: initial
+    is_correct: false
+  - text: original
+    is_correct: false
+  - text: copy
+    is_correct: false
+  - text: origin
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 19:07:57 UTC"
+record: -1
+selected_options:
+  - 3
+custom_name: Copy of the repo
+local_check: true

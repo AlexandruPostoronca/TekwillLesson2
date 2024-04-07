@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: changing your project
+    is_correct: false
+  - text: changing your project status
+    is_correct: false
+  - text: saving the state of your repository
+    is_correct: false
+  - text: saving your current project version
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:29:07 UTC"
+record: -1
+selected_options:
+  - 3
+custom_name: Choose the right commit definition
+local_check: true

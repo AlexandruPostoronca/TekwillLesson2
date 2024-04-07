@@ -1,0 +1,40 @@
+<h2>Fork and pull request</h2>
+<p>Suppose you want to change someone else's project or use someone else's project as a starting point for your own idea. If you are not a collaborator, you cannot modify files in the repo of the project.</p>
+<p>In this case, GitHub makes it possible for you to become a contributor. You need to <strong>fork</strong> this repo, modify its content, and propose your changes via <strong>pull request</strong>. If the owners of the project like your changes, they might put them into the original repository.</p>
+
+<h4>Forking a repo</h4>
+<p>A <strong>fork</strong> is a copy of a repository. It allows you to freely experiment with it without affecting the original project. To make a fork, you must log into GitHub.</p>
+<p>Please, open <a href="https://github.com/hyperskill/intro-to-github" rel="nofollow noopener noreferrer" target="_blank">our educational repository</a> and click <strong>Fork</strong> in the top-right corner of the page. You will be automatically redirected to your fork of the original repository. You can also find it on the <strong>Your repositories</strong> page (click on your profile in the top-right corner of the page).</p>
+<p><img alt="" src="https://ucarecdn.com/ece2e1a6-ce90-4e3d-aa98-ff0d8f8e9ffd/"></p>
+<p>A fork is just a regular repository hosted on GitHub like the original one. You can add new files and modify them or remove existing ones in your fork.</p>
+
+<h4>Branching</h4>
+<p>Before we start making changes to the content of the repo, we need to learn an important concept called <strong>branching</strong>. It provides a way to work on different versions of a repository at the same time.</p>
+<p>By default, any repository has a branch called <strong>main</strong> that represents the actual version of a project. If you want to change some content in a repo, first, you need to create a new branch based on <strong>main</strong> to get an isolated snapshot of the project. Usually, a branch represents a feature or a fix that is being developed at the moment. It allows you to protect <strong>main</strong> from possible unwanted changes and to make a rollback. You can also create a new branch based on another branch (non-main) that is active.</p>
+<p><strong>Branching</strong> especially helps organize team development processes. Several programmers work on different features at the same time, each in their own branch. After the job is done, the code is merged together.</p>
+<p>Now it may not be easy for you to understand branching, so just follow our recommendation and use special branches rather than work on the <strong>main</strong> directly. If you want to read more about branches, check out <a href="https://guides.github.com/introduction/flow/" rel="nofollow noopener noreferrer" target="_blank">a short article</a> written by GitHub.</p>
+
+<h4>Modifying content in a special branch</h4>
+<p>Before we start modifying the content, let's create a new branch. Click on the <strong>main</strong> branch, this will open a drop-down menu. Enter a unique descriptive name for your branch like <strong>edit-readme </strong>and then press<strong> Enter </strong>or click <strong>Create branch: name.</strong></p>
+<p><img alt="" height="286" name="Screenshot_1.png" src="https://ucarecdn.com/fa5bb608-6fd2-4067-867e-f3e7b0daf1cf/" width="381"></p>
+<p>Let's modify the <strong>README.md </strong>file, which we can find in the new branch. Open this file and click the edit button (pencil) or click the same button below the repo. Make some change; for example, write some information you learned about forks or branches.</p>
+<p>To apply these changes, scroll to the <strong>Commit changes</strong> section below, write a meaningful message about your changes, and then click <strong>Commit changes</strong>. It will put these changes in your repository in the <strong>edit-readme</strong> branch. The original repo and the <strong>main</strong> branch of your fork will not undergo any changes.</p>
+<p><img alt="" src="https://ucarecdn.com/761cfe3a-2a94-486b-8ba8-4b57f67eaf8e/"></p>
+<p>Then check your changes in the <strong>README</strong><strong>.</strong><strong>md</strong> file.</p>
+<p>You may perform several commits in the same branch with different changes to better understand this process. You can also create or upload a new file in this repo if you want.</p>
+<p>Further on we will learn how to modify the content of some repo using IntelliJ IDEA and Terminal instead of a web browser.</p>
+
+<h4>Pull request</h4>
+<p>After you change the content of a repo, you can create a <strong>pull request (PR)</strong> to propose your changes to the original repository. You may click <strong>Pull request</strong> as shown below or <strong>Compare </strong>and then<strong> Create pull request </strong>on the new Comparing changes page.</p>
+<p><img alt="" src="https://ucarecdn.com/d70c0b2a-32d1-454b-8461-313b02aa3530/"></p>
+<p>Then you will see a special page for creating a <strong>pull</strong><strong> request</strong>.</p>
+<p><img alt="" src="https://ucarecdn.com/f69396ff-5c81-4507-b9c3-329fade6abfd/"></p>
+<p>You can see the green text <strong>Able to merge</strong> which means that your version of the project does not conflict with the original version in the repo. In some cases, the text might be different; that would mean that the original repository has some recent changes, but you still can create a PR. Later we will learn how to synchronize your fork with the original repository.</p>
+<p>Make sure that you've specified the base fork as the original repo (<strong>hyperskill/intro-to-github</strong>) with the <strong>main</strong> branch, and the head fork is your repo with a non-main branch.</p>
+<p>Click <strong>Create pull request</strong>, provide a descriptive <strong>title</strong>, then click <strong>Create pull request</strong> again. After that, you will see the PR that you've created in the repo of this project (you can find it in the <strong>Pull requests</strong> section).</p>
+<p>We will not respond to your requests in this repository, don't be surprised :)</p>
+<p></p><div class="alert alert-primary"><strong>Finally</strong>,<strong> </strong>you can also create a completely new repository for a new project without forking. To do this, go to your repository and click New. Enter a descriptive name for your repository. You will have full access to this repository as its owner, so you do not need to fork it to make changes. If you want, you can practice with your own repository.</div><p></p>
+
+<h4>Conclusion</h4>
+<p>Let's quickly recap what we did here in general. First, we copied the repo, in other words, we created a fork of that repo. Then in our fork, we created a new branch. Next, we made changes to the file inside our new branch. Finally, we offered our modifications to the original repository by making a pull request of our fork with the new branch.</p>
+

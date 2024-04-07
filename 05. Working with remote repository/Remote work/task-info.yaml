@@ -1,0 +1,33 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "It's inconvenient, it's better to burn everything to a disk"
+    is_correct: false
+  - text: Remote repositories cannot be hacked
+    is_correct: false
+  - text: All team members have access to the current version of the project
+    is_correct: true
+  - text: It's trendy among programmers
+    is_correct: false
+  - text: It stores all the project data in one place
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:50:58 UTC"
+record: -1
+selected_options:
+  - 2
+  - 4
+custom_name: Remote work
+local_check: true

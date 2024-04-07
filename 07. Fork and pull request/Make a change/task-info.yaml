@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: move the code to a new repository and experiment there
+    is_correct: true
+  - text: commit changes in main
+    is_correct: false
+  - text: switch to fork and work there
+    is_correct: true
+  - text: you cannot make any changes
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 19:04:27 UTC"
+record: -1
+selected_options:
+  - 0
+  - 2
+custom_name: Make a change
+local_check: true

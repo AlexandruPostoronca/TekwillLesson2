@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: on a special online service
+    is_correct: true
+  - text: only on a single central server
+    is_correct: false
+  - text: on your hard drive
+    is_correct: true
+  - text: only on GitHub
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 17:54:44 UTC"
+record: -1
+selected_options:
+  - 0
+  - 2
+local_check: true

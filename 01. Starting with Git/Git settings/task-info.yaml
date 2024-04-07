@@ -1,0 +1,33 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: age
+    is_correct: false
+  - text: name
+    is_correct: true
+  - text: email
+    is_correct: true
+  - text: telephone number
+    is_correct: false
+  - text: home address
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 17:51:11 UTC"
+record: -1
+selected_options:
+  - 1
+  - 2
+local_check: true

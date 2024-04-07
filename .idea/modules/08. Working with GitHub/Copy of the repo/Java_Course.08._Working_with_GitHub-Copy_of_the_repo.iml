@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":08._Working_with_GitHub-Copy_of_the_repo" external.linked.project.path="$MODULE_DIR$/../../../../08. Working with GitHub/Copy of the repo" external.root.project.path="$MODULE_DIR$/../../../.." external.system.id="GRADLE" external.system.module.group="Java_Course" external.system.module.version="unspecified" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../../08. Working with GitHub/Copy of the repo">
+      <excludeFolder url="file://$MODULE_DIR$/../../../../08. Working with GitHub/Copy of the repo/.gradle" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../08. Working with GitHub/Copy of the repo/build" />
+      <excludeFolder url="file://$MODULE_DIR$/../../../../08. Working with GitHub/Copy of the repo/out" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

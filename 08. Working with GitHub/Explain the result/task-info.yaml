@@ -1,0 +1,31 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: You have a new branch fix-a-bug in the remote repo on GitHub.
+    is_correct: false
+  - text: You no longer have the master branch.
+    is_correct: false
+  - text: You made a commit.
+    is_correct: true
+  - text: You have a new branch fix-a-bug in the local repo on your computer.
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 19:13:28 UTC"
+record: -1
+selected_options:
+  - 2
+  - 3
+custom_name: Explain the result
+local_check: true

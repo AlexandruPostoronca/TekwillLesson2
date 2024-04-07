@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: a special file with user information
+    is_correct: false
+  - text: a container for project and its data
+    is_correct: true
+  - text: a file with documentation
+    is_correct: false
+  - text: a separate website to store project datasets
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 07 Apr 2024 18:58:27 UTC"
+record: -1
+selected_options:
+  - 1
+custom_name: What is a repository?
+local_check: true
